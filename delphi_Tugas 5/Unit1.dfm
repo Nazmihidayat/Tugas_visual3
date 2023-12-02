@@ -99,7 +99,7 @@ object Form1: TForm1
     Database = 'db_perpustakaan2'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'C:\Users\dayat\OneDrive\Dokumen\delphi Tugas 2\libmysql.dll'
+    LibraryLocation = 'C:\Users\dayat\OneDrive\Dokumen\delphi_Tugas 5\libmysql.dll'
     Left = 36
     Top = 220
   end

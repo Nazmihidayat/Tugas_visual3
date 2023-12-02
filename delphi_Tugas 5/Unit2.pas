@@ -19,6 +19,10 @@ type
     btn4: TButton;
     btn5: TButton;
     procedure btn1Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
+    procedure btn5Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,13 +35,33 @@ var
 implementation
 
 uses
-  Unit3;
+  Unit3, Unit4, Unit5, Unit6, Unit7;
 
 {$R *.dfm}
 
 procedure TForm2.btn1Click(Sender: TObject);
 begin
 Form3.ShowModal;
+end;
+
+procedure TForm2.btn2Click(Sender: TObject);
+begin
+Form4.ShowModal;
+end;
+
+procedure TForm2.btn5Click(Sender: TObject);
+begin
+Form5.ShowModal;
+end;
+
+procedure TForm2.btn3Click(Sender: TObject);
+begin
+Form6.ShowModal;
+end;
+
+procedure TForm2.btn4Click(Sender: TObject);
+begin
+Form7.ShowModal;
 end;
 
 end.

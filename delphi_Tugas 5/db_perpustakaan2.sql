@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 29 Nov 2023 pada 04.42
+-- Waktu pembuatan: 02 Des 2023 pada 05.47
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 8.1.10
 
@@ -39,7 +39,9 @@ CREATE TABLE `anggota` (
 --
 
 INSERT INTO `anggota` (`id_anggota`, `nama`, `alamat`, `no_telepon`) VALUES
-(1, 'as', 'asa', '0868687');
+(1, 'assaa', 'asa', '0868687'),
+(3, 'aaacaa', 'dody', '0867567'),
+(4, 'gigoss', 'gogog', '666');
 
 -- --------------------------------------------------------
 
@@ -56,6 +58,13 @@ CREATE TABLE `buku` (
   `jumlah_stok` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `buku`
+--
+
+INSERT INTO `buku` (`id_buku`, `id_rak`, `judul`, `pengarang`, `tahun_terbit`, `jumlah_stok`) VALUES
+(1, 2, 'qqqqq', 'casc', 'casc', 67856546);
+
 -- --------------------------------------------------------
 
 --
@@ -66,8 +75,16 @@ CREATE TABLE `buku_setelah_dipinjam` (
   `id_buku_setalah` int(10) NOT NULL,
   `id_peminjaman` int(10) NOT NULL,
   `id_buku` int(10) NOT NULL,
-  `kondisi_buku` varchar(10) NOT NULL
+  `kondisi_buku` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `buku_setelah_dipinjam`
+--
+
+INSERT INTO `buku_setelah_dipinjam` (`id_buku_setalah`, `id_peminjaman`, `id_buku`, `kondisi_buku`) VALUES
+(2, 1, 1, 'bagus'),
+(4, 3, 3, 'Kurang Bagus');
 
 -- --------------------------------------------------------
 
@@ -84,6 +101,13 @@ CREATE TABLE `peminjaman` (
   `status_pengembalian` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `peminjaman`
+--
+
+INSERT INTO `peminjaman` (`id_peminjaman`, `id_buku`, `id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_pengembalian`) VALUES
+(1, 1, 1, 'fi', 'gi', 'gi');
+
 -- --------------------------------------------------------
 
 --
@@ -95,6 +119,14 @@ CREATE TABLE `rak` (
   `nama_rak` varchar(15) NOT NULL,
   `lokasi` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `rak`
+--
+
+INSERT INTO `rak` (`id_rak`, `nama_rak`, `lokasi`) VALUES
+(1, 'adss', 'Lantai 3'),
+(2, 'bss', 'Lantai 4');
 
 -- --------------------------------------------------------
 
@@ -170,7 +202,31 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `id_anggota` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_anggota` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT untuk tabel `buku`
+--
+ALTER TABLE `buku`
+  MODIFY `id_buku` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `buku_setelah_dipinjam`
+--
+ALTER TABLE `buku_setelah_dipinjam`
+  MODIFY `id_buku_setalah` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT untuk tabel `peminjaman`
+--
+ALTER TABLE `peminjaman`
+  MODIFY `id_peminjaman` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `rak`
+--
+ALTER TABLE `rak`
+  MODIFY `id_rak` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`

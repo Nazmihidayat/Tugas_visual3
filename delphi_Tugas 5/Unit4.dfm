@@ -914,37 +914,37 @@ object Form4: TForm4
   object lbl1: TLabel
     Left = 16
     Top = 200
-    Width = 27
+    Width = 32
     Height = 13
-    Caption = 'Nama'
+    Caption = 'ID Rak'
   end
   object lbl2: TLabel
     Left = 12
     Top = 232
-    Width = 33
+    Width = 25
     Height = 13
-    Caption = 'Alamat'
+    Caption = 'Judul'
   end
   object lbl3: TLabel
     Left = 12
     Top = 260
-    Width = 54
+    Width = 52
     Height = 13
-    Caption = 'No Telepon'
+    Caption = 'Pengarang'
   end
   object Label1: TLabel
     Left = 12
     Top = 320
-    Width = 54
+    Width = 57
     Height = 13
-    Caption = 'No Telepon'
+    Caption = 'Jumlah Stok'
   end
   object Label2: TLabel
     Left = 12
     Top = 292
-    Width = 33
+    Width = 61
     Height = 13
-    Caption = 'Alamat'
+    Caption = 'Tahun Terbit'
   end
   object dbgrd1: TDBGrid
     Left = 0
@@ -1092,7 +1092,7 @@ object Form4: TForm4
     Database = 'db_perpustakaan2'
     User = 'root'
     Protocol = 'mysql'
-    LibraryLocation = 'C:\Users\dayat\OneDrive\Dokumen\delphi Tugas 2\libmysql.dll'
+    LibraryLocation = 'C:\Users\dayat\OneDrive\Dokumen\delphi_Tugas 5\libmysql.dll'
     Left = 96
     Top = 12
   end
@@ -1160,7 +1160,7 @@ object Form4: TForm4
           Frame.Typ = [ftTop]
           HAlign = haCenter
           Memo.UTF8 = (
-            'ID Anggota')
+            'ID Buku')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1178,7 +1178,7 @@ object Form4: TForm4
           Frame.Typ = [ftTop]
           HAlign = haCenter
           Memo.UTF8 = (
-            'Nama Anggota')
+            'ID Rak')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1196,7 +1196,7 @@ object Form4: TForm4
           Frame.Typ = [ftTop]
           HAlign = haCenter
           Memo.UTF8 = (
-            'Alamat')
+            'Judul')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1214,7 +1214,7 @@ object Form4: TForm4
           Frame.Typ = [ftTop]
           HAlign = haCenter
           Memo.UTF8 = (
-            'No Telpon')
+            'Pengarang')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1232,7 +1232,7 @@ object Form4: TForm4
           Frame.Typ = [ftTop]
           HAlign = haCenter
           Memo.UTF8 = (
-            'No Telpon')
+            'Tahun Terbit')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1250,7 +1250,7 @@ object Form4: TForm4
           Frame.Typ = [ftTop]
           HAlign = haCenter
           Memo.UTF8 = (
-            'No Telpon')
+            'Jumlah Stok')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1407,7 +1407,7 @@ object Form4: TForm4
         Font.Style = []
         HAlign = haCenter
         Memo.UTF8 = (
-          'Laporan Anggota')
+          'Laporan Buku')
         ParentFont = False
       end
     end

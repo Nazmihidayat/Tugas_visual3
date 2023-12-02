@@ -64,6 +64,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'Buku'
     TabOrder = 1
+    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 232
@@ -72,6 +73,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'Buku Setelah Dipinjam'
     TabOrder = 2
+    OnClick = btn3Click
   end
   object btn4: TButton
     Left = 84
@@ -80,6 +82,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'Rak'
     TabOrder = 3
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 204
@@ -88,5 +91,6 @@ object Form2: TForm2
     Height = 25
     Caption = 'Peminjaman'
     TabOrder = 4
+    OnClick = btn5Click
   end
 end
